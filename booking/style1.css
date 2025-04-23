@@ -1,0 +1,128 @@
+/* General page styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Hotel box container styling */
+.hotelDetails {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Individual hotel box style */
+.hotelBox {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    padding: 15px;
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.hotelBox:hover {
+    transform: scale(1.05);
+}
+
+/* Hotel image styling */
+.hotelBox img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Hotel name */
+.hotelBox .hotelName {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #333;
+}
+
+/* Location text */
+.hotelBox .location {
+    font-size: 1.1em;
+    margin-top: 10px;
+    color: #888;
+}
+
+/* Rating text */
+.hotelBox .rating {
+    font-size: 1.2em;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+/* Amenities styling */
+.hotelBox .amenities ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.hotelBox .amenities ul li {
+    font-size: 1.1em;
+    color: #444;
+    margin: 5px 0;
+}
+
+.hotelBox .amenities ul li i {
+    margin-right: 5px;
+    color: #4CAF50;
+}
+
+/* Price and book button styling */
+.hotelBox .priceContainer {
+    font-size: 1.2em;
+    margin-top: 15px;
+    color: #d32f2f;
+    font-weight: bold;
+}
+
+.hotelBox .priceNote {
+    font-size: 0.9em;
+    color: #888;
+}
+
+.hotelBox .bookNow {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    width: 100%;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+.hotelBox .bookNow:hover {
+    background-color: #45a049;
+}
+
+/* Add some space between sections */
+.spacer {
+    height: 20px;
+}
+
+/* Make sure layout is responsive */
+@media (max-width: 768px) {
+    .hotelBox {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hotelBox {
+        width: 100%;
+    }
+}

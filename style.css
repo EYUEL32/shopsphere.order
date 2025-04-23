@@ -1,0 +1,836 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.top-navbar{
+    width: 100%;
+    height: 7vh;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+.top-icons{
+    margin-left: 45px;
+}
+.top-icons i{
+    font-size: 20px;
+    color: #1c1c50;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.other-links{
+    margin-right: 33px;
+}
+.other-links i{
+    color: #1c1c50;
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+#btn-login{
+    width: 100px;
+    border: 2px solid #1c1c50;
+    color: #1c1c50;
+    font-weight: bold;
+    border-radius: 5px;
+    height: 5vh;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#btn-login a{
+    text-decoration: none;
+    color: #1c1c50;
+    transition: 0.5s ease;
+}
+#btn-login a:hover{
+    background-color: #1c1c50;
+    color: white;
+}
+#btn-login:hover{
+    background-color: #1c1c50;
+    color: white;
+}
+#btn-signup{
+    width: 100px;
+    border: 2px solid #1c1c50;
+    color: #1c1c50;
+    font-weight: bold;
+    border-radius: 5px;
+    height: 5vh;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#btn-signup a{
+    text-decoration: none;
+    color: #1c1c50;
+    transition: 0.5s ease;
+}
+#btn-signup a:hover{
+    background-color: #1c1c50;
+    color: white;
+}
+#btn-signup:hover{
+    background-color: #1c1c50;
+    color: white;
+}
+@media screen and (max-width:500px){
+    .top-icons{
+        margin-left: 30px;
+    }
+    .top-icons i{
+        font-size: 15px;
+    }
+    .other-links i{
+        font-size: 15px;
+    }
+    #btn-login{
+        width: 60px;
+        height: 5vh;
+    }
+    #btn-signup{
+        width: 70px;
+        height: 5vh;
+    }
+}
+@media screen and (max-width:350px){
+    .top-icons{
+        margin-left: 10px;
+    }
+    .top-icons i{
+        font-size: 10px;
+    }
+    .other-links{
+        margin-right: 10px;
+    }
+    .other-links i{
+        font-size: 10px;
+    }
+    #btn-login{
+        width: 50px;
+        height: 5vh;
+        font-size: 13px;
+    }
+    #btn-signup{
+        width: 60px;
+        height: 5vh;
+        font-size: 13px;
+    }
+}
+@media screen and (max-width:350px){
+    .top-icons{
+        margin-left: 5px;
+    }
+    .top-icons i{
+        font-size: 12px;
+    }
+    .other-links{
+        margin-right: 10px;
+    }
+    .other-links i{
+        font-size: 12px;
+    }
+    #btn-login{
+        width: 40px;
+        height: 5vh;
+        font-size: 10px;
+    }
+    #btn-signup{
+        width: 50px;
+        height: 5vh;
+        font-size: 10px;
+    }
+}
+/* home section */
+.home-section{
+    width: 100%;
+    height: 93vh;
+    background-color: #a9a9a926;
+}
+/* navbar */
+#navbar{
+    background-color: #1c1c50;
+    font-size: 16px;
+    font-family: 'Roboto Slab', serif;
+}
+#navbar .nav-link{
+    color: white;
+    font-weight: bold;
+    margin-left: 5px;
+    transition: 0.5s ease;
+}
+#navbar .nav-link:hover{
+    color: white;
+    border-radius: 5px;
+}
+.dropdown li a{
+    color: white;
+}
+#search-btn{
+    color: white;
+    border:  1px solid white;
+}
+#search-btn:hover{
+    background-color: #1c1c50;
+}
+/* navbar */
+/* home content */
+/* Home Content */
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #1c1c50;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+}
+
+/* Full-page background image */
+.home .img {
+    width: 100%;
+    height: 100%;
+    position: absolute; /* Position absolute to cover the entire section */
+    top: 0;
+    left: 0;
+    z-index: -1; /* Ensure the image is behind the content */
+}
+
+.home .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the section */
+}
+
+/* Content Styles */
+.home .content {
+    margin-top: 30px; /* Add space above the content */
+}
+
+.content h3 {
+    font-size: 50px;
+    text-shadow: 1px 1px 1px black;
+    color: #1c1c50;
+    font-weight: bold;
+    margin: 50px; /* Remove margins for centering */
+}
+
+.content h3 span {
+    font-size: 40px;
+}
+
+.content h4 {
+    margin-top: 10px; /* Add some space between the paragraph and heading */
+}
+
+.content #shopnow {
+    margin-top: 20px; /* Add space above the button */
+    width: 200px;
+    height: 38px;
+    border: 2px solid #1c1c50;
+    font-weight: bold;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.content #shopnow:hover {
+    background-color: #1c1c50;
+    color: white;
+}
+
+/* Responsive Media Queries */
+@media screen and (max-width: 800px) {
+    .content h3 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .content h3 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 799px) {
+    .home-section {
+        height: auto; /* Adjust height for smaller screens */
+        padding: 20px; /* Add padding for better spacing */
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .home-section {
+        height: auto; /* Adjust height for smaller screens */
+        padding: 20px; /* Add padding for better spacing */
+    }
+}
+
+/* home section */
+
+
+
+
+/* footer */
+#footer{
+    padding: 0 0 30px 0;
+    color: #d0d0d0;
+    font-size: 14px;
+    background: #1c1c50;
+    font-family: 'Roboto Slab', serif;
+}
+#footer .footer-top{
+    padding: 60px 0 30px;
+    background: #1c1c50;
+    color: white;
+}
+#footer .footer-top .footer-contact h3{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+#footer .footer-top .footer-contact h4{
+    font-size: 22px;
+    margin:  0 0 300px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    font-weight: 700;
+}
+#footer .footer-top .footer-contact p{
+    font-size: 14px;
+    margin: 0;
+    color: white;
+    line-height: 1;
+    font-weight: 700;
+}
+#footer .footer-top h4{
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 12px;
+}
+#footer .footer-top .footer-links{
+    margin-bottom: 30px;
+}
+#footer .footer-top .footer-links ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#footer .footer-top .footer-links ul li{
+    padding-right: 10px 0;
+    display: flex;
+    align-items: center;
+}
+#footer .footer-top .footer-links ul li:first-child{
+    padding: 0;
+}
+#footer .footer-top .footer-links ul li a{
+    color: white;
+    line-height: 2;
+}
+#footer .footer-top .socail-links a{
+    font-size: 18px;
+    display: inline-block;
+    color: white;
+    line-height: 1;
+    padding-right: 4px;
+    border-radius: 50px;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.5s ease;
+}
+#footer .copyright{
+    text-align: center;
+    float: left; 
+}
+#footer .credits{
+    float: right;
+    text-align: center;
+}
+/* footer */
+html{
+    scroll-behavior: smooth;
+}
+.arrow{
+    position: fixed;
+    background-color: #1c1c50;
+    border-radius: 50px;
+    height: 50px;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    align-items: center;
+    line-height: 50px;
+}
+
+/* login */
+.login{
+    width: 50%;
+    margin: 20px;
+    font-family: 'Roboto Slab', serif;
+}
+#side1{
+    background-color: #1c1c50;
+    height: 76vh;
+    border-radius: 5px;
+    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+}
+#side1 h3{
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+    margin-top: 200px;
+    align-items: center;
+    text-align: center;
+}
+#side1 p{
+    color: white;    
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+}
+#btn{
+    align-items: center;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+#btn a{
+    text-decoration: none;
+    color: white;
+}
+#side2{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+    align-items: center;
+    text-align: center;
+}
+#side2 h3{
+    margin-top: 50px;
+    color: #1c1c50;
+    font-weight: bold;
+}
+#side2 .inp{
+    margin-top: 32px;
+}
+#side2 input{
+    width: 500px;
+    margin-top: 20px;
+    height: 36px;
+    align-items: center;
+}
+#side2 p{
+    margin-top: 20px;
+    cursor: pointer;
+}
+#side2 .icons i{
+    margin-left: 10px;
+    cursor: pointer;
+}
+#login{
+    margin-top: 10px;
+}
+#login button{
+    width: 200px;
+    height: 32px;
+    color: white;
+    background-color: #1c1c50;
+    border: none;
+    font-weight: bold;
+}
+@media screen and (max-width:992px){
+    #side2 input{
+        width: 300px;
+    }
+}
+@media screen and (max-width:330x){
+    #side2 input{
+        width: 200px;
+    }
+}
+/* login */
+
+/* about */
+#about{
+    margin-top: 50px;
+}
+#about h1{
+    text-align: center;    
+    font-weight: bold;
+    color: #1c1c50;
+}
+/* about */
+/* login */
+.logout{
+    width: 50%;
+    margin: 20px;
+    font-family: 'Roboto Slab', serif;
+}
+#side1{
+    background-color: #1c1c50;
+    height: 76vh;
+    border-radius: 5px;
+    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+}
+#side1 h3{
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+    margin-top: 200px;
+    align-items: center;
+    text-align: center;
+}
+#side1 p{
+    color: white;    
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+}
+#btn{
+    align-items: center;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+#btn a{
+    text-decoration: none;
+    color: white;
+}
+#side2{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+    align-items: center;
+    text-align: center;
+}
+#side2 h3{
+    margin-top: 50px;
+    color: #1c1c50;
+    font-weight: bold;
+}
+#side2 .inp{
+    margin-top: 32px;
+}
+#side2 input{
+    width: 500px;
+    margin-top: 20px;
+    height: 36px;
+    align-items: center;
+}
+#side2 p{
+    margin-top: 20px;
+    cursor: pointer;
+}
+#side2 .icons i{
+    margin-left: 10px;
+    cursor: pointer;
+}
+#logout{
+    margin-top: 10px;
+}
+#logout button{
+    width: 200px;
+    height: 32px;
+    color: white;
+    background-color: #1c1c50;
+    border: none;
+    font-weight: bold;
+}
+@media screen and (max-width:992px){
+    #side2 input{
+        width: 300px;
+    }
+}
+@media screen and (max-width:330x){
+    #side2 input{
+        width: 200px;
+    }
+}
+/* contact */
+#contact{
+    margin-top: 50px;
+}
+#contact h1{
+    color: #1c1c50;
+    text-shadow: 0px 0px 1px black;
+}
+#contact .card{
+    height: 80px;
+    margin-top: 20px;
+    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+}
+#contact .card i{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 15px;
+    color: #1c1c50;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+#contact .card h6{
+    margin-left: 10px;
+    margin-top: 10px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: #1c1c50;
+}#messagebtn button{
+    margin-top: 30px;
+    width: 200px;
+    height: 33px;
+    background: transparent;
+    border: 2px solid #1c1c50;
+    color: #1c1c50;
+    font-weight: bold;
+    letter-spacing: 3px;
+    transition: 0.5s ease;
+}
+#messagebtn button:hover{
+    background-color: #1c1c50;
+    color: white;
+}
+/* contact */
+
+
+
+
+
+
+
+
+
+/*hotel*/
+
+/* Section Styles */
+.booking_section {
+    background: url('image/hotel.png') no-repeat center center fixed;
+    background-size: cover;
+    padding: 5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+/* Booking Form Styles */
+.booking_form {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  color: #1c1c50; /* Ensure text within the form is the correct color */
+}
+
+.input_box {
+  flex: 1 1 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.input_box span {
+  font-size: 1.75rem;
+  color: #1c1c50; /* Updated color */
+}
+
+.input_box label {
+  font-weight: 500;
+  color: #1c1c50; /* Updated color */
+}
+
+.input_box input {
+  display: block;
+  width: 100%;
+  max-width: 150px;
+  padding: 10px;
+  color: #1c1c50; /* Updated color */
+  font-size: 0.9rem;
+  outline: none;
+  border: 1px solid #1c1c50; /* Updated color */
+  border-radius: 5px;
+}
+.button_box {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .book_now_button {
+    padding: 10px 20px;
+    background-color: #1c1c50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .book_now_button:hover {
+    background-color: #1c1c50;
+  }
+  
+/*endhotel******************************************************************************/
+
+/* Rental Section Styles */
+.rental_section {
+    background: url('image/car-rental.png') no-repeat center center fixed;
+    background-size: cover;
+    padding: 5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Rental Form Styles */
+.rental_form {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+    color: #1c1c50;
+}
+
+.input_box {
+    flex: 1 1 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.input_box span {
+    font-size: 1.75rem;
+    color: #1c1c50;
+}
+
+.input_box label {
+    font-weight: 500;
+    color: #1c1c50;
+}
+
+.input_box input,
+.input_box select {
+    display: block;
+    width: 100%;
+    max-width: 150px;
+    padding: 10px;
+    color: #1c1c50;
+    font-size: 0.9rem;
+    outline: none;
+    border: 1px solid #1c1c50;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Button Box for Rental Form */
+.button_box {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.rent_now_button {
+    padding: 10px 20px;
+    background-color: #1c1c50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.rent_now_button:hover {
+    background-color: #3b3b7d;
+}
+/*----------------car end--------------*/
+
+
+/* Ticketing Section Styles */
+.ticketing_section {
+    background: url('image/attraction.png') no-repeat center center fixed;
+    background-size: cover;
+    padding: 5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Ticketing Form Styles */
+.ticketing_form {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+    color: #1c1c50;
+}
+
+.input_box {
+    flex: 1 1 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.input_box span {
+    font-size: 1.75rem;
+    color: #1c1c50;
+}
+
+.input_box label {
+    font-weight: 500;
+    color: #1c1c50;
+}
+
+.input_box input,
+.input_box select {
+    display: block;
+    width: 100%;
+    max-width: 150px;
+    padding: 10px;
+    color: #1c1c50;
+    font-size: 0.9rem;
+    outline: none;
+    border: 1px solid #1c1c50;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Button Box for Ticketing Form */
+.button_box {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.book_ticket_button {
+    padding: 10px 20px;
+    background-color: #1c1c50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.book_ticket_button:hover {
+    background-color: #3b3b7d;
+}
+/*--------------ticket end---------------*/
